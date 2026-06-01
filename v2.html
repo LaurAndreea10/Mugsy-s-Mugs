@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mugsy's Mugs V2</title>
+  <meta name="description" content="V2 concept page for Mugsy's Mugs artisan ceramics." />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#080603;--card:#17110a;--text:#f3ead8;--muted:#c8b99a;--gold:#c9973e;--line:rgba(201,151,62,.25)}
+    [data-theme="light"]{--bg:#f8f0e2;--card:#fffaf2;--text:#1a1208;--muted:#725f43;--gold:#9a6c1a;--line:rgba(154,108,26,.28)}
+    body{min-height:100vh;background:radial-gradient(circle at top left,rgba(201,151,62,.22),transparent 35%),var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.6}
+    header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem clamp(1rem,4vw,3rem);border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg)}
+    .brand{font-family:Impact,sans-serif;font-size:clamp(2rem,5vw,4rem);letter-spacing:.06em}.actions{display:flex;gap:.5rem;flex-wrap:wrap}a,button{border:1px solid var(--line);background:rgba(201,151,62,.1);color:var(--text);padding:.65rem .9rem;border-radius:999px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;cursor:pointer}a:hover,button:hover{background:var(--gold);color:#080603}
+    .hero{padding:clamp(3rem,8vw,7rem) clamp(1rem,4vw,3rem);display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}.hero h1{font-family:Impact,sans-serif;font-size:clamp(4rem,15vw,12rem);line-height:.82;letter-spacing:.03em}.hero em{display:block;color:var(--gold);font-family:Georgia,serif;font-size:.22em;font-weight:300}.lead{max-width:58ch;color:var(--muted);font-size:clamp(1.1rem,2vw,1.45rem);font-style:italic;margin-top:1.2rem}.panel{background:linear-gradient(145deg,rgba(201,151,62,.18),transparent),var(--card);border:1px solid var(--line);border-radius:32px;padding:2rem;box-shadow:0 24px 80px rgba(0,0,0,.25)}.panel h2{font-family:Impact,sans-serif;font-size:3rem;letter-spacing:.05em}.panel p{color:var(--muted);margin:.8rem 0 1.2rem}.chips{display:flex;gap:.5rem;flex-wrap:wrap}.chip{border:1px solid var(--line);padding:.45rem .7rem;border-radius:999px;color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}
+    main{padding:0 clamp(1rem,4vw,3rem) 4rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:1.4rem;min-height:220px}.card small{color:var(--gold);letter-spacing:.16em;text-transform:uppercase}.card h3{font-family:Impact,sans-serif;font-size:2.7rem;letter-spacing:.05em;margin:.6rem 0}.card p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:2rem clamp(1rem,4vw,3rem);color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    @media(max-width:800px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Mugsy's Mugs V2</div>
+    <div class="actions">
+      <a href="index.html" data-en="Main version" data-ro="Versiunea principală">Main version</a>
+      <button onclick="setTheme()" data-en="Theme" data-ro="Temă">Theme</button>
+      <button onclick="setLang()" id="langBtn">RO</button>
+    </div>
+  </header>
+  <section class="hero">
+    <div>
+      <h1>Premium <em data-en="ceramic ritual" data-ro="ritual ceramic">ceramic ritual</em>V2</h1>
+      <p class="lead" data-en="A cleaner, warmer and more editorial version of the Mugsy's Mugs shop concept." data-ro="O versiune mai curată, mai caldă și mai editorială a conceptului de magazin Mugsy's Mugs.">A cleaner, warmer and more editorial version of the Mugsy's Mugs shop concept.</p>
+    </div>
+    <aside class="panel">
+      <h2 data-en="What changed" data-ro="Ce s-a schimbat">What changed</h2>
+      <p data-en="V2 keeps the artisan feeling, but simplifies the shopping rhythm and strengthens the portfolio presentation." data-ro="V2 păstrează senzația artizanală, dar simplifică ritmul de cumpărare și întărește prezentarea de portofoliu.">V2 keeps the artisan feeling, but simplifies the shopping rhythm and strengthens the portfolio presentation.</p>
+      <div class="chips"><span class="chip">UX</span><span class="chip">Bilingual</span><span class="chip">Responsive</span><span class="chip">Premium UI</span></div>
+    </aside>
+  </section>
+  <main>
+    <section class="grid" aria-label="V2 highlights">
+      <article class="card"><small>01</small><h3 data-en="Clearer" data-ro="Mai clar">Clearer</h3><p data-en="A stronger hierarchy for hero, story and product value." data-ro="O ierarhie mai puternică pentru hero, poveste și valoarea produsului.">A stronger hierarchy for hero, story and product value.</p></article>
+      <article class="card"><small>02</small><h3 data-en="Warmer" data-ro="Mai cald">Warmer</h3><p data-en="Gold, cream and ceramic-inspired tones create a crafted atmosphere." data-ro="Tonurile aurii, crem și ceramice creează o atmosferă artizanală.">Gold, cream and ceramic-inspired tones create a crafted atmosphere.</p></article>
+      <article class="card"><small>03</small><h3 data-en="Faster" data-ro="Mai rapid">Faster</h3><p data-en="A simpler page structure makes it easier to scan and reuse." data-ro="O structură mai simplă face pagina mai ușor de parcurs și reutilizat.">A simpler page structure makes it easier to scan and reuse.</p></article>
+    </section>
+  </main>
+  <footer><span>© 2026 Mugsy's Mugs</span><span data-en="V2 portfolio concept" data-ro="Concept V2 pentru portofoliu">V2 portfolio concept</span></footer>
+  <script>
+    let lang='en';
+    function setTheme(){document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'}
+    function setLang(){lang=lang==='en'?'ro':'en';document.documentElement.lang=lang;document.getElementById('langBtn').textContent=lang==='en'?'RO':'EN';document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.dataset[lang]})}
+  </script>
+</body>
+</html>
